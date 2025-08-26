@@ -1,0 +1,29 @@
+/* External css */
+
+/* Universal Selector */
+*{             
+    margin: 0;
+    padding: 0;
+}
+/* element selector */
+p{
+    background-color: orange;
+}
+/* id selector */
+#id{
+    color: blueviolet;
+}
+/* class selector */
+.class{
+  color: brown;
+}
+/* decendent selector */
+div div h1 p{
+    color: red;
+    background-color: azure;
+}
+/* Group Selector */
+h4,h5{
+    color: green;
+    font-size: larger;
+}

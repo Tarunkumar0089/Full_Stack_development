@@ -1,0 +1,28 @@
+body{
+    background-color: gray;
+}
+h1{
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+} 
+
+#text{
+    text-decoration: underline;
+    text-transform: capitalize;
+    
+}
+#space{
+    font-weight: 400;
+    text-align: left; 
+    line-height: 2;
+    letter-spacing: 2px;
+    font-size: large;
+    color: yellow;
+}
+#family{
+    font-family: 'Courier New', Courier, monospace;
+}
+#color{
+    color: blue;
+}
