@@ -1,0 +1,37 @@
+/* .container{
+    display: inline;
+}
+.box{
+    background-color: chocolate;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+.box1{
+    background-color: deeppink;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+    position: fixed;
+    left: 34px;
+} */
+.container{
+    border: 2px solid black;
+    height: 500px;
+    background-color: cornsilk;
+    display: flex;
+    justify-content:center;
+    /* align-items: center; */
+}
+.box{
+    background-color: chocolate;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+.box1{
+    background-color: chocolate;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}

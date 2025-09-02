@@ -1,0 +1,23 @@
+#main {
+    border: 2px solid blue;
+    height: 500px;
+    width: 200px;  
+    display: grid;
+    place-items: center; 
+}
+.circle {
+    border: 2px solid blue;
+    border-radius: 50%;
+    background-color: blueviolet;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover; 
+}
