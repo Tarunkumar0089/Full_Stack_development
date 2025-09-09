@@ -136,10 +136,10 @@ nav {
 
 .blog h2 {
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 2rem; 
   color: #ff6f61;
 }
-
+  
 .blog-container {
   display: flex;
   gap: 20px;
