@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: width 15s;
+    }
+
+    div:hover {
+        width: 400px;
+      animation: colorChange 5s forwards;
+    }
+
+    @keyframes colorChange {
+      0% {
+         background-color: blue; 
+        }
+      33% {
+         background-color: orange; 
+        }
+      66% { 
+        background-color: red; 
+    }
+      100% { 
+        background-color: brown; 
+    }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
