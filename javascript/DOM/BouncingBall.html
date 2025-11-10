@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncing Ball</title>
+  <style>
+    #container {
+      width: 400px;
+      height: 300px;
+      border: 3px solid black;
+      position: relative;
+      overflow: hidden;
+      margin: 30px auto;
+    }
+    #ball {
+      width: 40px;
+      height: 40px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 180px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Bouncing Ball Animation</h2>
+  <div id="container">
+    <div id="ball"></div>
+  </div>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+
+  <script>
+    const ball = document.getElementById("ball");
+    const container = document.getElementById("container");
+    const startBtn = document.getElementById("start");
+    const stopBtn = document.getElementById("stop");
+
+    let position = 0;
+    let speed = 3;
+    let direction = 1;
+    let interval;
+
+    startBtn.onclick = function() {
+      if (!interval) {
+        interval = setInterval(() => {
+          position += speed * direction;
+          if (position >= container.clientHeight - ball.clientHeight || position <= 0) {
+            direction *= -1;
+          }
+          ball.style.top = position + "px";
+        }, 10);
+      }
+    };
+
+    stopBtn.onclick = function() {
+      clearInterval(interval);
+      interval = null;
+    };
+  </script>
+</body>
+</html>
